@@ -7,6 +7,8 @@
 
 html {
     scroll-behavior: smooth;
+    max-width: 100vw;
+    overflow-x: hidden;
 }
 
 body {
@@ -14,10 +16,13 @@ body {
     line-height: 1.6;
     color: #ffffff;
     background-color: #0a0a0a;
+    max-width: 100vw;
     overflow-x: hidden;
 }
 
 .container {
+    box-sizing: border-box;
+    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
@@ -104,6 +109,8 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
 .logo {
@@ -133,8 +140,10 @@ p {
     font-size: 1.5rem;
     font-weight: 600;
     white-space: nowrap; /* sprečava prelom teksta */
+    max-width: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
-  
 
 /* Navigacija desktop */
 .nav-desktop ul {
@@ -184,7 +193,6 @@ p {
     background: #FFD700;
     transition: all 0.3s ease;
 }
-
 
 /* Mobile Menu */
 .mobile-menu {
@@ -246,7 +254,7 @@ p {
     bottom: 0;
     background: 
       linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)),
-      url('img/slika\ 2.jpeg') no-repeat center center;
+      url('img/slika 2.jpeg') no-repeat center center;
     background-size: cover;
     z-index: -1;
 }
@@ -270,7 +278,6 @@ p {
     margin-bottom: 2rem;
     color: #cccccc;
 }
-
 
 /* Section Headers */
 .section-header {
@@ -517,6 +524,8 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
     margin-bottom: 2rem;
 }
 
@@ -528,6 +537,7 @@ p {
 .footer-social {
     display: flex;
     gap: 1rem;
+    justify-content: flex-end;
 }
 
 .footer-social a {
@@ -585,12 +595,17 @@ p {
     
     .footer-content {
         flex-direction: column;
-        gap: 2rem;
         text-align: center;
+        justify-content: center;
+    }
+    
+    .footer-social {
+        justify-content: center;
     }
     
     .hero {
-        height: 80vh;
+        height: auto;
+        padding: 80px 0;
     }
     
     .container {
@@ -622,6 +637,10 @@ p {
         height: 250px;
         font-size: 3rem;
     }
+    
+    .container {
+        padding: 0 10px;
+    }
 }
 
 /* Animation Classes */
@@ -652,4 +671,4 @@ p {
 
 ::-webkit-scrollbar-thumb:hover {
     background: #FFA500;
-} 
+}
