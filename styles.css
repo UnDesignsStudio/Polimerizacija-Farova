@@ -110,30 +110,30 @@ p {
     display: flex;
     align-items: center;
     gap: 10px; /* razmak između slike i teksta */
-  }
-  
-  .logo-link {
+}
+
+.logo-link {
     display: flex;
     align-items: center;
     text-decoration: none; /* uklanja podvlačenje linka */
     color: #FFD700; /* boja teksta */
-  }
-  
-  .logo-link:hover {
-    color: #FFD700; /* možeš ostaviti istu boju da se ne menja na hover */
-  }
-  
-  .logo img {
+}
+
+.logo-link:hover {
+    color: #FFD700; /* ista boja na hover */
+}
+
+.logo img {
     max-height: 50px;
     width: auto;
     display: block;
-  }
-  
-  .logo-text {
+}
+
+.logo-text {
     font-size: 1.5rem;
     font-weight: 600;
     white-space: nowrap; /* sprečava prelom teksta */
-  }
+}
   
 
 /* Navigacija desktop */
