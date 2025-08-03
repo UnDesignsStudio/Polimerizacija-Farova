@@ -135,7 +135,10 @@ p {
 .logo-text {
     font-size: 1.5rem;
     font-weight: 600;
-    white-space: nowrap; /* sprečava prelom teksta */
+    white-space: normal;  /* dozvoli prelamanje */
+    max-width: 220px;     /* ili prilagodi širinu */
+    overflow: visible;
+    text-overflow: unset;
 }
   
 
@@ -232,13 +235,13 @@ p {
 
 /* Hero Section */
 .hero {
-    position: relative;
-    height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    overflow: hidden;
+    height: calc(100vh - 70px); /* ako header ima 70px visine */
+    padding-top: 70px; /* da hero sadržaj ne bude ispod headera */
 }
 
 .hero-background {
