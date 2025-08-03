@@ -246,7 +246,7 @@ p {
     bottom: 0;
     background: 
       linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)),
-      url('img/slika 2.jpeg') no-repeat center center;
+      url('img/slika\ 2.jpeg') no-repeat center center;
     background-size: cover;
     z-index: -1;
 }
