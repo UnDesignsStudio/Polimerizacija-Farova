@@ -109,7 +109,7 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap; /* dozvoli prelamanje */
+    flex-wrap: wrap;
     gap: 15px;
 }
 
@@ -139,19 +139,11 @@ p {
 .logo-text {
     font-size: 1.5rem;
     font-weight: 600;
-    max-width: 220px; /* povećana širina */
-    overflow: visible;
-    text-overflow: unset;
-    /* uklonjen white-space: nowrap; da dozvoli prelamanje */
+    white-space: nowrap; /* sprečava prelom teksta */
+    max-width: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
-
-/* Responsive: smanji font na manjim ekranima */
-@media (max-width: 480px) {
-    .logo-text {
-        font-size: 1.1rem;
-    }
-}
-
 
 /* Navigacija desktop */
 .nav-desktop ul {
