@@ -106,12 +106,37 @@ p {
     align-items: center;
 }
 
-.logo h2 {
-    color: #FFD700;
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* razmak između slike i teksta */
+  }
+  
+  .logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none; /* uklanja podvlačenje linka */
+    color: #FFD700; /* boja teksta */
+  }
+  
+  .logo-link:hover {
+    color: #FFD700; /* možeš ostaviti istu boju da se ne menja na hover */
+  }
+  
+  .logo img {
+    max-height: 50px;
+    width: auto;
+    display: block;
+  }
+  
+  .logo-text {
     font-size: 1.5rem;
-    margin: 0;
-}
+    font-weight: 600;
+    white-space: nowrap; /* sprečava prelom teksta */
+  }
+  
 
+/* Navigacija desktop */
 .nav-desktop ul {
     display: flex;
     list-style: none;
@@ -145,6 +170,7 @@ p {
     width: 100%;
 }
 
+/* Mobile menu toggle */
 .mobile-menu-toggle {
     display: none;
     flex-direction: column;
@@ -158,6 +184,7 @@ p {
     background: #FFD700;
     transition: all 0.3s ease;
 }
+
 
 /* Mobile Menu */
 .mobile-menu {
